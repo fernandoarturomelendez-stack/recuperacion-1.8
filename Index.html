@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Dental INFRAMEN</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <h2> Clínica Dental</h2>
+        <h1>INFRAMEN</h1>
+    </div>
+
+    <nav class="menu" id="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a href="#contacto" class="boton">Agendar Cita</a>
+    <button class="menu-movil" id="menuMovil">☰</button>
+</header>
+
+<section class="hero" id="inicio">
+    <div class="hero-texto">
+        <span>Nueva Apertura </span>
+        <h1>Tu sonrisa, nuestra prioridad</h1>
+        <p>En Clínica Dental INFRAMEN ofrecemos atención profesional y moderna para cuidar tu sonrisa.</p>
+
+        <div class="estadisticas">
+            <div><h3>+10 años</h3><p>Experiencia</p></div>
+            <div><h3>5K+</h3><p>Pacientes</p></div>
+            <div><h3>100%</h3><p>Confianza</p></div>
+        </div>
+
+        <a href="#contacto" class="boton">Agendar Cita →</a>
+    </div>
+
+    <img src="img/clinica.jpg" alt="Clínica Dental" class="hero-imagen">
+    <div class="scroll">↓ Desliza para conocer más</div>
+</section>
+
+<section class="seccion" id="servicios">
+    <div class="titulo">
+        <span>Nuestros Servicios</span>
+        <h2>Cuidamos cada detalle de tu sonrisa</h2>
+    </div>
+
+    <div class="contenedor">
+        <div class="tarjeta"><h3> Odontología General</h3><p>Prevención y cuidado dental para toda la familia.</p></div>
+        <div class="tarjeta"><h3> Ortodoncia</h3><p>Alineamos tus dientes para una mejor sonrisa.</p></div>
+        <div class="tarjeta"><h3> Implantes Dentales</h3><p>Recuperamos la funcionalidad de tus dientes.</p></div>
+        <div class="tarjeta"><h3> Estética Dental</h3><p>Mejoramos tu sonrisa con resultados naturales.</p></div>
+        <div class="tarjeta"><h3> Endodoncia</h3><p>Tratamientos especializados para tus dientes.</p></div>
+        <div class="tarjeta"><h3> Periodoncia</h3><p>Cuidado y prevención de enfermedades de las encías.</p></div>
+    </div>
+</section>
+
+<section class="nosotros seccion" id="nosotros">
+    <img src="img/doctor.jpg" alt="Atención odontológica">
+
+    <div>
+        <span>Nosotros</span>
+        <h2>¿Por qué elegir INFRAMEN?</h2>
+        <p>Somos un equipo comprometido con tu salud bucal, ofreciendo atención de calidad y tecnología moderna.</p>
+        <ul>
+            <li>✔ Atención personalizada</li>
+            <li>✔ Tecnología moderna</li>
+            <li>✔ Ambiente seguro y cómodo</li>
+        </ul>
+        <a href="#contacto" class="boton">Conoce más →</a>
+    </div>
+</section>
+
+<section class="banner">
+    <div>
+        <h2>Agenda tu cita hoy mismo</h2>
+        <p>Tu salud bucal es importante para nosotros.</p>
+    </div>
+    <a href="#contacto" class="boton">Agendar Cita →</a>
+</section>
+
+<section class="seccion" id="testimonios">
+    <div class="titulo">
+        <span>Testimonios</span>
+        <h2>Lo que dicen nuestros pacientes</h2>
+    </div>
+
+    <div class="contenedor">
+        <div class="tarjeta"><p>"Excelente atención, el personal es muy amable."</p><h3>María López</h3><span>★★★★★</span></div>
+        <div class="tarjeta"><p>"Mi sonrisa ha cambiado gracias a INFRAMEN."</p><h3>Carlos Méndez</h3><span>★★★★★</span></div>
+        <div class="tarjeta"><p>"Una clínica con excelente servicio."</p><h3>Ana Torres</h3><span>★★★★★</span></div>
+    </div>
+</section>
+
+<section class="contacto seccion" id="contacto">
+    <div class="contacto-info">
+        <span>Contacto</span>
+        <h2>Reserva tu cita</h2>
+        <p>Completa el formulario para solicitar tu cita.</p>
+        <p>📍 San Salvador</p>
+        <p>📞 +503 2222-3333</p>
+        <p>✉ info@inframen.com</p>
+    </div>
+
+    <form id="formulario">
+        <input type="text" placeholder="Nombre completo" required minlength="3">
+        <input type="tel" placeholder="Teléfono" required pattern="[0-9+ ]{8,15}">
+        <input type="email" placeholder="Correo electrónico" required>
+
+        <select required>
+            <option value="">Selecciona un servicio</option>
+            <option>Odontología General</option>
+            <option>Ortodoncia</option>
+            <option>Implantes Dentales</option>
+            <option>Estética Dental</option>
+            <option>Endodoncia</option>
+            <option>Periodoncia</option>
+        </select>
+
+        <textarea placeholder="Mensaje (opcional)"></textarea>
+        <button type="submit" class="boton">Enviar Solicitud</button>
+    </form>
+</section>
+
+<div class="modal" id="modal">
+    <div class="modal-contenido">
+        <h2>¡Solicitud recibida!</h2>
+        <p>Gracias por contactar a Clínica Dental INFRAMEN.</p>
+        <button class="boton" id="cerrarModal">Aceptar</button>
+    </div>
+</div>
+
+<footer class="footer">
+    <div><h2>🦷 INFRAMEN</h2><p>Sonrisas que duran</p></div>
+    <div>
+        <h3>Enlaces</h3>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+    <div>
+        <h3>Servicios</h3>
+        <p>Odontología General</p>
+        <p>Ortodoncia</p>
+        <p>Estética Dental</p>
+    </div>
+    <div>
+        <h3>Síguenos</h3>
+        <p>Facebook | Instagram | TikTok</p>
+        <p>© 2026 Clínica Dental INFRAMEN</p>
+    </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
